@@ -1,0 +1,31 @@
+{
+  "name": "log1x/socialproof",
+  "description": "A fluent interface for retrieving follower counts from social API's.",
+  "keywords": [
+    "social",
+    "fluent",
+    "interface",
+    "wrapper",
+    "helper"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Brandon Nifong",
+      "email": "brandon@tendency.me"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "SocialProof\\": "src/"
+    },
+    "files": [
+      "src/SocialProof.php"
+    ]
+  },
+  "require": {
+    "php": ">=7.0",
+    "guzzlehttp/guzzle": "^6.3",
+    "guzzlehttp/oauth-subscriber": "^0.3.0"
+  }
+}
