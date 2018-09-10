@@ -76,7 +76,6 @@ use SocialProof\SocialProof;
 
 return SocialProof::social()
   ->instagram()
-      ->setUsername('username')
       ->setToken('XXXXXXXXXXXXXXXXXXXXXXXX')
   ->get();
 ```

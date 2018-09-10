@@ -28,12 +28,18 @@ class Instagram implements ProviderInterface
     protected $endpoint = '/v1/users/';
 
     /**
+     * Default username for this provider.
+     *
+     * @var string
+     */
+    protected $username = 'self';
+
+    /**
      * Credentials required for this provider.
      *
      * @var array
      */
     protected $credentials = [
-        'username',
         'token'
     ];
 
@@ -65,6 +71,8 @@ class Instagram implements ProviderInterface
 
         $config->api = $config->api ?? $this->api;
         $config->endpoint = $config->endpoint ?? $this->endpoint;
+
+        $credentials->username = $credentials->username ?? $this->username;
 
         $instagram = $this->client($config)->getAsync($credentials->username, [
             'query' => ['access_token' => $credentials->token]
