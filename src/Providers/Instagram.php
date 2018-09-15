@@ -74,7 +74,7 @@ class Instagram implements ProviderInterface
 
         $credentials->username = $credentials->username ?? $this->username;
 
-        $instagram = $this->client($config)->getAsync($credentials->username, [
+        $instagram = $this->client($config)->getAsync($config->endpoint . $credentials->username, [
             'query' => ['access_token' => $credentials->token]
         ])->then(
             function (ResponseInterface $response) use ($config) {
