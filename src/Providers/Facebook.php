@@ -78,7 +78,7 @@ class Facebook implements ProviderInterface
             },
 
             function (RequestException $error) use ($config) {
-                return $config->default ? $error->getMessage() : $config->default;
+                return $config->debug ? $error->getMessage() : $config->default;
             }
         );
 
