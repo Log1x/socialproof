@@ -1,4 +1,4 @@
-# SocialProof
+# SocialProof - MusicData Fork
 
 ## What is SocialProof?
 
@@ -12,6 +12,10 @@ SocialProof is a [fluent interface](https://en.wikipedia.org/wiki/Fluent_interfa
 * Simple debugging when configuring.
 * Automatically handles OAuth when fetching from API's such as Twitter.
 * Easily extendable and all PR's are very welcome. :heart:
+
+## New Features Planned
+
+* Be able to potentially allow an array of usernames to get passed and if an array of usernames is detected, return an array or object containing username => count – this would have to be done on each provider as well as making sure the API endpoints are going to a location that would be able to pull that data. Some API’s are more strict than others, so milage may vary no matter the approach.
 
 ## Current Platforms
 
