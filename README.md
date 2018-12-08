@@ -1,5 +1,7 @@
 # SocialProof
 
+[![Latest Stable Version](https://poser.pugx.org/log1x/socialproof/v/stable)](https://packagist.org/packages/log1x/socialproof) [![Total Downloads](https://poser.pugx.org/log1x/socialproof/downloads)](https://packagist.org/packages/log1x/socialproof)
+
 ## What is SocialProof?
 
 SocialProof is a [fluent interface](https://en.wikipedia.org/wiki/Fluent_interface) for fetching followers / fans from various social media platforms using their internal API. It handles all API requests asynchronous using [Guzzle](https://github.com/guzzle/guzzle) and catches API exceptions / errors with a user-definable default value.
