@@ -64,7 +64,7 @@ class Facebook implements ProviderInterface
         }
 
         $config->api = $config->api ?? $this->api;
-        $config->endpoint = $config->endpooint ?? $this->endpoint;
+        $config->endpoint = $config->endpoint ?? $this->endpoint;
 
         $facebook = $this->client($config)->getAsync($config->endpoint . $credentials->username, [
             'query' => [
